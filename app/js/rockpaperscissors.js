@@ -62,9 +62,9 @@ else {
     else if (playerMove == 'paper' && computerMove == 'scissors') {
         winner = 'computer';
     }
-    else winner = 'something went wrong';
+    else winner = 'something went wrong with getWinner';
 }
-    return winner;
+return winner;
 }
 
 function playToFive() {
