@@ -87,8 +87,8 @@ function playToFive() {
         else {
             ties ++;
         }
-        console.log("\nYou chose "+playerMove+", and the computer picked "+computerMove+"\n")
-        console.log("The current score is now:\nPlayer:"+playerWins+"\nComputer:"+computerWins+"\n")
+        console.log("\nYou chose "+playerMove+", and the computer picked "+computerMove+"\n");
+        console.log("The current score is now:\nPlayer:"+playerWins+"\nComputer:"+computerWins+"\n");
     }
     return [playerWins, computerWins];
 }
