@@ -67,29 +67,29 @@ function playToFive() {
     console.log("Let's play Rock, Paper, Scissors");
     var playerWins = 0;
     var computerWins = 0;
-    var ties = 0; // !added ties to make testing cycles shorter!
+    //var ties = 0; // !added ties to make testing cycles shorter!
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
     // After each 'round', display some text in the console indicating who played
     // what, who won, and what the current scoreboard looks like.
     // For example,
     //  console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
     //  console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
-    while (computerWins < 5 && playerWins < 5 && ties < 5) {
+    while (computerWins < 5 && playerWins < 5 /*&& ties < 5*/) {
         var computerMove = getComputerMove();
         var playerMove = getPlayerMove();
         var winner = getWinner(playerMove,computerMove);
-        if (winner === 'computer') {
+        if (winner === "computer") {
             computerWins += 1;
         }
-        else if (winner === 'player') {
+        else if (winner === "player") {
             playerWins += 1;
         }
-        else {
+        /*else {
             ties ++;
-        }
+        }*/
         console.log("\nYou chose "+playerMove+", and the computer picked "+computerMove+"\n");
         console.log("The current score is now:\nPlayer:"+playerWins+"\nComputer:"+computerWins+"\n");
+        console.log("Remember, first to five, wins!");
     }
     return [playerWins, computerWins];
 }
-
